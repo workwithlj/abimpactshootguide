@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABiMPACT Shoot Calendar</title>
+<meta name="description" content="ABiMPACT shoot calendar: shoot guides, shot lists and day-of mode.">
+<meta name="theme-color" content="#FBFBFC">
+<script>try{var t=localStorage.getItem('abimpact.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#calendar" aria-label="ABiMPACT home">AB<b>i</b>MPACT</a>
+    <div class="nav-links">
+      <a href="#calendar">Calendar</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Calendar + shoot guides + day-of mode are rendered by app.js -->
+<div id="page"></div>
+
+<main id="brief">
+
+  <section id="calendar" class="cal-sec" aria-label="Shoot calendar">
+    <div class="wrap"><div id="cal-root"><p class="muted">Loading calendar…</p></div></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap"><span><b class="logo" style="font-size:16px">AB<b>i</b>MPACT</b></span><span>Shoot calendar</span></div>
+</footer>
+
+<div id="app"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<script src="app.js?v=4"></script>
+</body>
+</html>
